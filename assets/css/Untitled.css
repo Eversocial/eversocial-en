@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Lato');
 /*!
- * Default theme for Pingendo 
- * Homepage: http://pingendo.com  
- * Copyright 2015 Pingendo 
- * Licensed under MIT 
+ * Default theme for Pingendo
+ * Homepage: http://pingendo.com
+ * Copyright 2015 Pingendo
+ * Licensed under MIT
  * Based on Bootstrap v3.3.4
 */
-/* Add custom CSS classes here 
- * 
+/* Add custom CSS classes here
+ *
  * img {
  *   box-shadow : 0px 0px 10px black !important;
  * }
@@ -1101,13 +1101,13 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337cbb;
+  color: #b01e3a;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23547f;
-  text-decoration: underline;
+  color: #b01e3a;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -6825,4 +6825,301 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px;
+}
+
+/*Grilla del blog*/
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #b01e3a;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 25%;
+}
+
+.grid-item {
+  float: left;
+  overflow: hidden;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.cont-title-blog{
+  height: 0px;
+}
+
+.cont-title-blog .title{
+  position: relative;
+  padding-top: 1px;
+  top: -45px;
+  width: 100%;
+  height: 0px;
+  border-bottom: 44px solid rgba(176, 30, 58, 0.35);
+  border-left: 70px solid transparent;
+  margin: 0px;
+}
+/*
+.grid-item:before {
+ content:"Leer artículo";
+ position: absolute;
+ top: 11px;
+ left: -30px;
+ background-color: rgba(176, 30, 58, 0.35);
+ transition: all 200ms ease;
+ display: none;
+}
+
+.grid-item:hover:before {
+ left: 20px;
+ transition: all 200ms ease;
+ display: block;
+}*/
+
+.grid-item .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background-color: rgba(176, 30, 58, 0.35);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+.mask p{
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  font-size: 17px;
+  top: 43%;
+  left: 50%;
+  margin-left: -67.5px;
+}
+
+.grid-item img{
+  opacity: 1;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.grid-item:hover .mask{
+ opacity: 1;
+}
+
+.grid-item:hover .cont-title-blog{
+  display: none;
+}
+.grid-item:hover img{
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.btn-contact{
+  color: white;
+  background-color: #b01e3a;
+  padding: 20px 50px;
+  border-radius: 5px;
+  font-size: 27px;
+  position: absolute;
+  top: 50%;
+  height: 78px;
+  margin-top: -39px;
+  left: 50%;
+  margin-left: -96px;
+}
+
+.btn-contact span {
+  left: 0;
+  transition: opacity .2s ease-out,left .2s ease-out;
+  -webkit-transition: opacity .2s ease-out,left .2s ease-out;
+  position: relative;
+}
+
+.btn-contact i{
+  font-size: 18px;
+  width: 18px;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  margin-top: -8px;
+  right: 41px;
+  -ms-filter: "alpha(opacity=0)";
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+}
+
+.btn-contact:hover, .btn-contact:focus{
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.btn-contact:hover span{
+  left: -20px;
+}
+
+.btn-contact:hover i {
+  opacity: 1;
+  -ms-filter: "alpha(opacity=100)";
+  right: 32px;
+}
+
+.col-footer{
+  height: 130px;
+}
+
+.arrow-contact{
+  font-size: 20px;
+  color: #fff!important;
+}
+
+#ourclients{
+  padding-bottom:70px;
+  padding-top:60px;
+  background: rgb(217, 44, 101);
+}
+
+.title-ourclients{
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:40px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.9);
+}
+
+.indicador {
+  position: absolute;
+  left: 50%;
+  margin-left: -67.5px;
+  border-bottom: 56px solid #af1e3a;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  height: 0;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  width: 135px;
+  bottom: 0px;
+}
+
+.indicador i{
+  font-size: 64px;
+  color: white;
+}
+
+#ourclients .cont-logo-client{
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.25);
+  height: 40px;
+  /* transform: skew(-20deg,0deg); */
+}
+
+#ourclients .cont-logo-client:last-child{
+  border-right-style: hidden;
+}
+
+#ourclients .cont-logo-client img{
+  display: inline-block;
+  margin-top: -16px;
+  /* transform: skew(20deg,0deg); */
+  /* vertical-align: middle; */
+  /* position: absolute; */
+  /* left: 0; */
+}
+
+.flogos{
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#more-logos{
+  margin-top: -10px;
+}
+
+.flogoso{
+  margin: 0px 0px 40px;
+}
+
+.btn-more-logos{
+  text-align:center;
+}
+
+.btn-more-logos .fa-angle-up{
+  transition: 2s ease;
+ 	-moz-transition: 2s ease; /* Firefox */
+ 	-webkit-transition: 2s ease; /* Chrome - Safari */
+ 	-o-transition: 2s ease; /* Opera */
+}
+
+#ourclients .collapsed .fa-angle-up{
+  transform : rotate(180deg);
+	-moz-transform : rotate(180deg); /* Firefox */
+	-webkit-transform : rotate(180deg); /* Chrome - Safari */
+	-o-transform : rotate(180deg); /* Opera */
+}
+
+.header-portafolio{
+  background: url(../../assets/img/bg-portafolioV2.jpg) !important;
+  width: 100%;
+  height: 330px;
+  margin: 0 0 18 !important;
+  background-repeat: repeat;
+  background-position: left -148px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-portafolio{
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 19px;
+  color: white;
+  font-size: 155px;
+  line-height: 122px;
+  font-family: "HelveticaNeueW01-75Bold", helvetica, arial, sans-serif;
+  margin: 0;
+  letter-spacing: -9px;
+  width: 100%;
+}
+
+.cont-proyecto{
+  padding: 0px;
+}
+
+.fl-proyectos{
+  margin: 0px;
 }
