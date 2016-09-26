@@ -1,12 +1,38 @@
-<html><head>
+<html>
+  <head>
         <meta charset="utf-8">
+        <title>EVERSOCIAL | Digital Agency – Online Strategies</title>
+        <meta name="description" content="We are passionate, diverse and young people focused on the development of high quality digital products. Our key for success is the talent of these people. We do everything possible to attract incredible people." >
+        <meta name="keywords" content="eversocial, imfeelingsocial, marketing, digital, websites, códgio, dev">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="./Untitled.css" rel="stylesheet" type="text/css">
-    </head><body>
-        <div class="cover" style="background: rgba(237,47,89,0.8);">
+        <link href="./assets/css/Untitled.css" rel="stylesheet" type="text/css">
+        <script src="./assets/js/masonry.pkgd.min.js"></script>
+        <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+
+
+});
+
+</script>
+
+  </head>
+  <body>
+        <div class="cover" style="background: rgba(213, 3, 70, 0.84);">
             <div class="navbar navbar-default">
                 <div class="container">
                     <div class="navbar-header">
@@ -46,7 +72,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1 style="color:white;">I'M FEELING SOCIAL</h1>
+                        <h1 style="color:white;">ARE YOU FEELING SOCIAL?</h1>
                         <br>
                         <br>
                         <a class="btn btn-lg btn-default">Contact</a>
@@ -117,118 +143,233 @@
         </div>
         <div class="section" style="background-color:#f7f7f7;">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="text-center" style="text-transform:uppercase;margin-bottom:50px;">Our Portfolio</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-vintro1.jpg" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-macrolab1-1.jpg" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-proactiva1.jpg" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-panamericana1.jpg" class="img-responsive"></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-maraton1.jpg" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-delolita1.jpg" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2016/01/interve1.jpg" class="img-responsive"></a>
-                    </div>
-                    <div class="col-md-3">
-                        <a><img src="http://eversocial.co/wp-content/uploads/2015/11/D1.jpg" class="img-responsive"></a>
-                    </div>
-                </div>
+              <div class="row header-portafolio">
+                  <h1 class="text-center title-portafolio">Our Portfolio</h1>
+              </div>
+              <div class="row fl-proyectos">
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-vintro1.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-macrolab1-1.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-proactiva1.jpg" class="img-responsive"></a>
+                  </div>
+              </div>
+              <div class="row fl-proyectos">
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-panamericana1.jpg" class="img-responsive"></a>
+                  </div>
+
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-maraton1.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2016/08/web-delolita1.jpg" class="img-responsive"></a>
+                  </div>
+              </div>
+              <div class="row fl-proyectos">
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2016/01/interve1.jpg" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-4 cont-proyecto">
+                      <a><img src="http://eversocial.co/wp-content/uploads/2015/11/D1.jpg" class="img-responsive"></a>
+                  </div>
+              </div>
+
             </div>
         </div>
-        <div class="section" style="padding-bottom:70px;padding-top:60px;">
+        <div id="ourclients" class="section">
             <div class="container">
-                <h1 style="text-align:center;margin-top:0px; margin-bottom:40px;text-transform:uppercase;">Our Clients</h1>
+                <h1 class="title-ourclients">Our Clients</h1>
+                <div class="row flogos">
+                    <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive img-rounded">
+                    </div>
+                    <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-md-3">
-                        <img src="http://eversocial.co/wp-content/uploads/2014/08/logo-halcones1.png" class="img-responsive">
+                  <a class="btn-more-logos collapsed" data-toggle="collapse" data-target="#more-logos">
+                  <div class="indicador col m12">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                  </div></a>
+                  <div id="more-logos" class="collapse off">
+                    <div class="row flogoso">
+                      <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                      </div>
+                      <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                      </div>
+                      <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive img-rounded">
+                      </div>
+                      <div class="col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                      </div>
+                  </div>
+                  <div class="row flogoso">
+                    <div class="col-md-3 cont-logo-client">
+                      <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
-                    <div class="col-md-3">
-                        <img src="http://eversocial.co/wp-content/uploads/2014/08/logo-flynorth.png" class="img-responsive">
+                    <div class="col-md-3 cont-logo-client">
+                      <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
-                    <div class="col-md-3">
-                        <img src="http://eversocial.co/wp-content/uploads/2014/08/logo-curvo.png" class="img-responsive img-rounded">
+                    <div class="col-md-3 cont-logo-client">
+                      <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive img-rounded">
                     </div>
-                    <div class="col-md-3">
-                        <img src="http://eversocial.co/wp-content/uploads/2014/08/logo-rudolf2.png" class="img-responsive">
+                    <div class="col-md-3 cont-logo-client">
+                      <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
+                </div>
+                    <a class="btn boton-galeria" data-toggle="collapse" data-target="#prueba"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+                  </div>
                 </div>
             </div>
         </div>
         <div class="section cont-blog">
             <h1 style="text-align:center;margin-bottom:60px;margin-top:40px;text-transform:uppercase;">Latest from Our Blog</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="http://eversocial.co/wp-content/uploads/2015/02/e791ab626e6785062374d45b25cc6e7f_XL-705x380.jpg" class="img-responsive">
-                        <h2>Lorem ipsum dolor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-                            <br>Ut enim ad minim veniam, quis nostrud</p>
-                        <p>Leer más &gt;</p>
+
+            <div class="grid" style="/*margin: 0px 102px;*/">
+              <div class="grid-sizer"></div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2015/06/9c2fe6cb8c357cf6d57c8926869c1003_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
                     </div>
-                    <div class="col-md-4">
-                        <img src="http://eversocial.co/wp-content/uploads/2015/06/f68bc1606a499c66a1eabd66e99d6817_XL-705x380.jpg" class="img-responsive">
-                        <h2>Lorem ipsum dolor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-                            <br>Ut enim ad minim veniam, quis nostrud</p>
-                        <p>Leer más &gt;</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="http://eversocial.co/wp-content/uploads/2015/06/66f461a82eb04828d9f9f9abb89cb004_XL-705x380.jpg" class="img-responsive">
-                        <h2>Lorem ipsum dolor</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
-                            <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-                            <br>Ut enim ad minim veniam, quis nostrud</p>
-                        <p>Leer más &gt;</p>
-                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
                 </div>
-            </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2015/06/f68bc1606a499c66a1eabd66e99d6817_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2016/09/woman-hand-smartphone-desk.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2015/06/b3a54ecc0915f9347c3f53fa31d161fe_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2015/06/66f461a82eb04828d9f9f9abb89cb004_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2015/06/acaf69a47291143b36612c5b483fc572_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2014/04/b7e607e23f1646b9ce9f7d0da4fbe580_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2014/05/9feeafa8e740fdbe632b43236148b194_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img src="http://eversocial.co/wp-content/uploads/2015/06/e2ead9c1349a48396463990fe7b55a21_XL.jpg" />
+                  <div class="cont-title-blog">
+                    <div class="title">
+                      <h4>Lorem ipsum dolor sit amet</h4>
+                    </div>
+                  </div>
+                  <div class="mask">
+                    <p>Leer artículo</p>
+                  </div>
+                </div>
+              </div>
         </div>
         <footer class="section section-primary" style="background-color:#ED1651 !important">
             <div class="container">
+              <div class="row">
+                <div class="col-sm-4 col-footer" style="text-align: center;">
+                  <a class="btn-contact" href="#"><span>Contact us</span>  <i class="fa fa-arrow-right arrow-contact" aria-hidden="true"></i></a>
+                </div>
+              <div class="col-sm-4 col-footer" style="text-align: center;">
+                <img src="http://www.everbrander.co/eversocial/wp-content/uploads/2015/05/logo-eversocial-blanco.png" style="margin: 13px 0px;">
+                <p>+57(4) 444-1678 Opc. 2 | <a href="mailto:info@eversocial.co">info@eversocial.co</a>
+                <br>Copyright © 2016 EVERSOCIAL | Medellín, Colombia</p>
+              </div>
+              <div class="col-sm-4 col-footer">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h1>Eversocial</h1>
-                        <p>+57(4) 444-1678 Opc. 2 | info@eversocial.co
-                            <br>Copyright © 2016 EVERSOCIAL | Medellín, Colombia</p>
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="text-info text-right">
-                            <br>
-                            <br>
-                        </p>
-                        <div class="row">
-                            <div class="col-md-12 hidden-xs text-right">
-                                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-youtube-play text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-flickr text-inverse"></i></a>
-                                <a href="#"><i class="fa fa-3x fa-fw fa-google-plus text-inverse"></i></a>
-                            </div>
-                        </div>
+                    <div class="col-md-12 hidden-xs text-center">
+                      <h3>Follow us:</h3>
+                      <a href="https://www.facebook.com/eversocial" target="_blank"><i class="fa fa-2x fa-fw fa-facebook text-inverse"></i></a>
+                      <a href="https://twitter.com/eversocialco" target="_blank"><i class="fa fa-2x fa-fw fa-twitter text-inverse" ></i></a>
+                      <a href="https://github.com/Eversocial" target="_blank"><i class="fa fa-2x fa-fw fa-github text-inverse" ></i></a>
+                      <a href="https://www.instagram.com/eversocialco/" target="_blank"><i class="fa fa-2x fa-fw fa-instagram text-inverse" ></i></a>
+                      <a href="https://www.youtube.com/user/eversocial" target="_blank"><i class="fa fa-2x fa-fw fa-youtube-play text-inverse"></i></a>
+                      <a href="https://www.flickr.com/photos/eversocial/" target="_blank"><i class="fa fa-2x fa-fw fa-flickr text-inverse"></i></a>
+                      <a href="https://plus.google.com/+EversocialCo" target="_blank"><i class="fa fa-2x fa-fw fa-google-plus text-inverse"></i></a>
                     </div>
                 </div>
+              </div>
+              </div>
             </div>
         </footer>
-
-
-</body></html>
+  </body>
+</html>
