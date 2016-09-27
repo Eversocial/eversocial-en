@@ -10,6 +10,9 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="./assets/css/Untitled.css" rel="stylesheet" type="text/css">
         <script src="./assets/js/masonry.pkgd.min.js"></script>
+        <script src="./assets/js/scrolling-nav.js"></script>
+        <script src="./assets/js/jquery.easing.min.js"></script>
+
         <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 
 <script>
@@ -24,6 +27,7 @@ $(document).ready(function(){
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
+
 
 
 });
@@ -42,7 +46,7 @@ $grid.imagesLoaded().progress( function() {
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <img href="/http://www.everbrander.co/eversocial/wp-content/uploads/2015/05/logo-eversocial-blanco.png" src="http://www.everbrander.co/eversocial/wp-content/uploads/2015/05/logo-eversocial-blanco.png" style="margin-top:20px">
+                        <img class="cont-logo-site" href="/http://www.everbrander.co/eversocial/wp-content/uploads/2015/05/logo-eversocial-blanco.png" src="http://www.everbrander.co/eversocial/wp-content/uploads/2015/05/logo-eversocial-blanco.png" >
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-ex-collapse" style="margin-top:20px">
                         <ul class="nav navbar-nav navbar-right menu">
@@ -50,16 +54,19 @@ $grid.imagesLoaded().progress( function() {
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#">About us</a>
+                                <a class="page-scroll" href="#about-us">About us</a>
                             </li>
                             <li>
-                                <a href="#">Services</a>
+                                <a class="page-scroll" href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="#">Portafolio</a>
+                                <a class="page-scroll" href="#portafolio">Portafolio</a>
                             </li>
                             <li>
-                                <a href="#">Blog</a>
+                                <a class="page-scroll" href="#ourclients">Clients</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#blog">Blog</a>
                             </li>
                             <li>
                                 <a href="#">Contacts</a>
@@ -72,38 +79,30 @@ $grid.imagesLoaded().progress( function() {
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1 style="color:white;">ARE YOU FEELING SOCIAL?</h1>
+                        <h1 class="text-destacado" >ARE YOU FEELING SOCIAL?</h1>
                         <br>
                         <br>
-                        <a class="btn btn-lg btn-default">Contact</a>
+                        <a class="btn-contact2" href="#"><span>Contact us</span>  <i class="fa fa-arrow-right arrow-contact" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div style="text-align:center">
-                            <img src="http://eversocial.co/wp-content/uploads/2016/09/isolo-eve.png" class="img-responsive img-thumbnail" style="width:100px">
-                        </div>
-                        <h1 style="text-align:center;text-transform:uppercase">About us</h1>
-                        <p style="text-align:center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-                            dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
-                            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                            enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                            felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
-                            elementum semper nisi. Aeean vulputate eleifend tellus. Aenean leo ligula,
-                            porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus
-                            in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
-                            laoreet.</p>
-                    </div>
+        <div id="about-us" class="section">
+            <div class="container container-aboutus">
+              <div class="row">
+                  <div class="col-md-8 cont-about-der shape-der" >
+                      <img src="http://eversocial.co/wp-content/uploads/2016/09/isolo-eve.png" class="img-responsive" style="width:100px;display: inline-block;">
+                      <p style="color: #d50346;font-size: 57px;line-height: 49px;">Everyone wants to be part<br> of the web.</p>
+                  </div>
+                  <div class="col-md-4 cont-about-izq" >
+                    <p style="color: #ffffff;font-size: 43px;line-height: 42px;">The question is:<br>
+                      Is your company ready?</p>
+                      <a class="btn-contact" href="#" style="margin-top: 40px !important;background-color: #b01e3a;"><span>Contact us</span>  <i class="fa fa-arrow-right arrow-contact" aria-hidden="true"></i></a>
+                  </div>
                 </div>
             </div>
         </div>
-        <div class="section" style="padding-top:0px;padding-bottom:0px;">
+        <div id="services" class="section" style="padding-top:0px;padding-bottom:0px;">
             <div class="container" style="width:100%;">
                 <div class="row">
                     <div class="col-md-6 cont-servicios" style="background-color:#AF1E3A">
@@ -141,7 +140,7 @@ $grid.imagesLoaded().progress( function() {
                 </div>
             </div>
         </div>
-        <div class="section" style="background-color:#f7f7f7;">
+        <div id="portafolio" class="section" style="background-color:#f7f7f7;">
             <div class="container">
               <div class="row header-portafolio">
                   <h1 class="text-center title-portafolio">Our Portfolio</h1>
@@ -184,17 +183,17 @@ $grid.imagesLoaded().progress( function() {
             <div class="container">
                 <h1 class="title-ourclients">Our Clients</h1>
                 <div class="row flogos">
-                    <div class="col-md-3 cont-logo-client">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                         <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
-                    <div class="col-md-3 cont-logo-client">
-                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-pergamino.png" class="img-responsive">
                     </div>
-                    <div class="col-md-3 cont-logo-client">
-                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive img-rounded">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-interve.png" class="img-responsive img-rounded">
                     </div>
-                    <div class="col-md-3 cont-logo-client">
-                        <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
+                        <img src="./assets/img/logo-delolita.png" class="img-responsive">
                     </div>
                 </div>
                 <div class="row">
@@ -204,30 +203,30 @@ $grid.imagesLoaded().progress( function() {
                   </div></a>
                   <div id="more-logos" class="collapse off">
                     <div class="row flogoso">
-                      <div class="col-md-3 cont-logo-client">
+                      <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                         <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                       </div>
-                      <div class="col-md-3 cont-logo-client">
+                      <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                         <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                       </div>
-                      <div class="col-md-3 cont-logo-client">
+                      <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                         <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive img-rounded">
                       </div>
-                      <div class="col-md-3 cont-logo-client">
+                      <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                         <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                       </div>
                   </div>
                   <div class="row flogoso">
-                    <div class="col-md-3 cont-logo-client">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                       <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
-                    <div class="col-md-3 cont-logo-client">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                       <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
-                    <div class="col-md-3 cont-logo-client">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                       <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive img-rounded">
                     </div>
-                    <div class="col-md-3 cont-logo-client">
+                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
                       <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
                 </div>
@@ -237,8 +236,8 @@ $grid.imagesLoaded().progress( function() {
                 </div>
             </div>
         </div>
-        <div class="section cont-blog">
-            <h1 style="text-align:center;margin-bottom:60px;margin-top:40px;text-transform:uppercase;">Latest from Our Blog</h1>
+        <div id="blog" class="section cont-blog">
+            <h1 class="title-blog" >Latest from Our Blog</h1>
 
             <div class="grid" style="/*margin: 0px 102px;*/">
               <div class="grid-sizer"></div>
@@ -356,7 +355,7 @@ $grid.imagesLoaded().progress( function() {
               </div>
               <div class="col-sm-4 col-footer">
                 <div class="row">
-                    <div class="col-md-12 hidden-xs text-center">
+                    <div class="col-md-12 text-center">
                       <h3>Follow us:</h3>
                       <a href="https://www.facebook.com/eversocial" target="_blank"><i class="fa fa-2x fa-fw fa-facebook text-inverse"></i></a>
                       <a href="https://twitter.com/eversocialco" target="_blank"><i class="fa fa-2x fa-fw fa-twitter text-inverse" ></i></a>
