@@ -6710,7 +6710,7 @@ body {
   }
   .cover h1,
   .cover .h1 {
-    font-size: 63px;
+    font-size: 54px;
   }
 }
 .cover h1.text-primary {
@@ -6804,33 +6804,71 @@ body {
 }
 .cont-info-servicios p {
   font-size: 18px;
+  top: 50%;
+  position: relative;
+  margin-top: -37.5px;
 }
 .cont-info-servicios i {
   font-size: 60px;
 }
 .cont-blog {
-  color: white;
-  background-color: #B01E3A;
+  color: #B01E3A;
+  background-color: #ffffff;
 }
-.cont-websites:hover {
+.cont-info-servicios .descripcion-servicio{
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  /*background-color: rgba(176, 30, 58, 0.35);*/
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.icon-services{
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  top: 50%;
+  margin-top: -56.5px
+}
+
+.cont-info-servicios:hover .descripcion-servicio{
+  opacity: 1;
+}
+.cont-info-servicios:hover .icon-services{
+    opacity: 0;
+  }
+.cont-websites {
   background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-websitesV3.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -40px;
 }
-.cont-email:hover {
+.cont-email {
   background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-emailV4.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -40px;
 }
-.cont-socialmedia:hover {
+.cont-socialmedia {
   background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-socialmediaV4.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px;
 }
-.cont-online:hover {
+.cont-online {
   background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-estrategiaV5.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -6847,7 +6885,7 @@ body { font-family: sans-serif; }
 /* ---- grid ---- */
 
 .grid {
-  background: #b01e3a;
+  background: white;
 }
 
 /* clear fix */
@@ -6878,6 +6916,7 @@ body { font-family: sans-serif; }
 
 .cont-title-blog{
   height: 0px;
+  color: white;
 }
 
 .cont-title-blog .title{
@@ -6890,6 +6929,8 @@ body { font-family: sans-serif; }
   border-left: 70px solid transparent;
   margin: 0px;
 }
+
+
 /*
 .grid-item:before {
  content:"Leer artículo";
@@ -6965,25 +7006,25 @@ body { font-family: sans-serif; }
 .btn-contact{
   color: white;
   background-color: #b01e3a;
-  padding: 20px 50px;
+  padding: 12px 40px;
   border-radius: 5px;
-  font-size: 27px;
+  font-size: 23px;
   position: absolute;
   top: 50%;
-  height: 78px;
+  height: 57px;
   margin-top: -39px;
   left: 50%;
-  margin-left: -115px;
+  margin-left: -95px;
 }
 
 
 .btn-contact2{
   color: #ed1651;
   background-color: #ffffff;
-  padding: 17px 50px;
+  padding: 17px 33px;
   border-radius: 5px;
-  font-size: 27px;
-  height: 78px;
+  font-size: 23px;
+  height: 57px;
 }
 
 
@@ -7015,7 +7056,7 @@ body { font-family: sans-serif; }
 }
 
 .btn-contact2 i{
-  font-size: 18px;
+  font-size: 14px;
   width: 0px;
   opacity: 0;
   position: relative;
@@ -7070,9 +7111,9 @@ body { font-family: sans-serif; }
 }
 
 #ourclients{
-  padding-bottom:70px;
+  padding-bottom:30px;
   padding-top:60px;
-  background: rgb(217, 44, 101);
+  background: rgb(176, 30, 58);
 }
 
 .title-ourclients{
@@ -7104,7 +7145,7 @@ body { font-family: sans-serif; }
 
 #ourclients .cont-logo-client{
   text-align: center;
-  border-right: 1px solid rgba(255,255,255,0.25);
+/*  border-right: 1px solid rgba(255,255,255,0.25);*/
   height: 40px;
   /* transform: skew(-20deg,0deg); */
 }
@@ -7165,7 +7206,7 @@ body { font-family: sans-serif; }
 }
 
 .title-portafolio{
-  text-transform: uppercase;
+  /*text-transform: uppercase;
   position: absolute;
   bottom: 19px;
   color: white;
@@ -7174,7 +7215,10 @@ body { font-family: sans-serif; }
   font-family: "HelveticaNeueW01-75Bold", helvetica, arial, sans-serif;
   margin: 0;
   letter-spacing: -9px;
-  width: 100%;
+  width: 100%;*/
+  text-transform: uppercase;
+  color: #b01e3a;
+  margin-bottom: 59px;
 }
 
 .cont-proyecto{
@@ -7248,7 +7292,7 @@ body { font-family: sans-serif; }
   z-index: 5;
   text-align: center;
   padding: 27px 0px;
-  height: 310px;
+  height: 285px;
   right: -219px;
   -moz-transition: all 0.5s;
    -o-transition: all 0.5s;
@@ -7257,9 +7301,9 @@ body { font-family: sans-serif; }
 }
 
 .cont-about-izq{
-  height: 310px;
+  height: 285px;
   text-align: center;
-  padding: 40px;
+  padding: 50px;
   background: #d92c65;
   right: -500px;
   display: none;
@@ -7277,6 +7321,8 @@ body { font-family: sans-serif; }
   right: 0px;
   display: block;
 }
+
+.title
 
 @media (max-width: 991px) {
   .flogoso{
