@@ -5,13 +5,15 @@
         <meta name="description" content="We are passionate, diverse and young people focused on the development of high quality digital products. Our key for success is the talent of these people. We do everything possible to attract incredible people." >
         <meta name="keywords" content="eversocial, imfeelingsocial, marketing, digital, websites, códgio, dev">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="./assets/css/Untitled.css" rel="stylesheet" type="text/css">
+        <link href="./assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="./assets/js/masonry.pkgd.min.js"></script>
         <script src="./assets/js/jquery.easing.min.js"></script>
         <script src="./assets/js/scrolling-nav.js"></script>
+        <script src="./assets/js/owl.carousel.js"></script>
         <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 
 <script>
@@ -27,6 +29,7 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
 
+$('.owl-carousel').owlCarousel();
 
 
 });
@@ -196,18 +199,24 @@ $grid.imagesLoaded().progress( function() {
         <div id="ourclients" class="section">
             <div class="container">
                 <h1 class="title-ourclients">Our Clients</h1>
-                <div class="row flogos">
-                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
+                <div class="row flogos owl-carousel">
+                    <div class="cont-logo-client">
                         <img src="./assets/img/logo-cliente-flynorth.png" class="img-responsive">
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
+                    <div class="cont-logo-client">
                         <img src="./assets/img/logo-pergamino.png" class="img-responsive">
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
+                    <div class="cont-logo-client">
                         <img src="./assets/img/logo-interve.png" class="img-responsive img-rounded">
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3 cont-logo-client">
+                    <div class="cont-logo-client">
                         <img src="./assets/img/logo-delolita.png" class="img-responsive">
+                    </div>
+                    <div class="cont-logo-client">
+                        <img src="./assets/img/logo-interve.png" class="img-responsive img-rounded">
+                    </div>
+                    <div class="cont-logo-client">
+                        <img src="./assets/img/logo-pergamino.png" class="img-responsive">
                     </div>
                 </div>
 
