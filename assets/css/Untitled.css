@@ -14,7 +14,7 @@
 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -4395,8 +4395,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #d50346;
+  border-color: #d50346;
 }
 .navbar-default .navbar-brand {
   color: #000000;
@@ -6794,6 +6794,7 @@ body {
   height: 700px;
   text-align: center;
   color: white;
+  padding: 0px;
 }
 .cont-info-servicios {
   height: 350px;
@@ -6801,15 +6802,18 @@ body {
 }
 .cont-info-servicios H1 {
   font-size: 30px;
+  text-shadow: 1px 1px 1px black;
 }
 .cont-info-servicios p {
   font-size: 18px;
   top: 50%;
   position: relative;
   margin-top: -37.5px;
+  text-shadow: 1px 1px 1px black;
 }
 .cont-info-servicios i {
   font-size: 60px;
+  text-shadow: 1px 1px 1px black;
 }
 .cont-blog {
   color: #B01E3A;
@@ -6819,7 +6823,7 @@ body {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
-  /*background-color: rgba(176, 30, 58, 0.35);*/
+  background-color: rgba(176, 30, 58, 0.35);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -6851,25 +6855,25 @@ body {
     opacity: 0;
   }
 .cont-websites {
-  background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-websitesV3.png);
+  background: url(../../assets/img/websites.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -40px;
 }
 .cont-email {
-  background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-emailV4.png);
+  background: url(../../assets/img/e-mail.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -40px;
+
 }
 .cont-socialmedia {
-  background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-socialmediaV4.png);
+  background: url(../../assets/img/redes-sociales.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px;
 }
 .cont-online {
-  background: url(http://eversocial.co/wp-content/uploads/2016/09/bg-estrategiaV5.png);
+  background: url(../../assets/img/about-full.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -50px;
@@ -6880,7 +6884,7 @@ body {
 /* force scrollbar */
 html { overflow-y: scroll; }
 
-body { font-family: sans-serif; }
+body { font-family: 'Lato', sans-serif; }
 
 /* ---- grid ---- */
 
@@ -6949,32 +6953,44 @@ body { font-family: sans-serif; }
 }*/
 
 .grid-item .mask {
-    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-    background-color: rgba(176, 30, 58, 0.35);
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background-color: rgba(176, 30, 58, 0.35);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
 
 .mask p{
+  width: 87px;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+}
+
+.mask h4{
+  font-size: 16px;
+}
+
+.mask .info-blog{
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  font-size: 17px;
-  top: 43%;
+  font-size: 15px !important;
+  top: 50%;
   left: 50%;
-  margin-left: -67.5px;
+  margin-left: -121.5px;
+  text-align: center;
+  margin-top: -29.5px;
 }
 
 .grid-item img{
@@ -7006,15 +7022,15 @@ body { font-family: sans-serif; }
 .btn-contact{
   color: white;
   background-color: #b01e3a;
-  padding: 12px 40px;
+  padding: 7px 16px;
   border-radius: 5px;
-  font-size: 23px;
+  font-size: 21px;
   position: absolute;
   top: 50%;
-  height: 57px;
-  margin-top: -39px;
+  height: 45px;
+  margin-top: -22.5px;
   left: 50%;
-  margin-left: -95px;
+  margin-left: -67px;
 
   display: inline-block;
   vertical-align: middle;
@@ -7054,12 +7070,10 @@ body { font-family: sans-serif; }
 }
 
 .btn-contact2{
-  color: #ed1651;
-  background-color: #ffffff;
-  padding: 12px 33px;
-  border-radius: 5px;
+  color: #FFFFFF;
+  /*background-color: #ffffff;*/
+  /*padding: 12px 33px;*/
   font-size: 23px;
-  height: 57px;
   text-decoration: none;
 
   display: inline-block;
@@ -7077,6 +7091,35 @@ body { font-family: sans-serif; }
 }
 
 .btn-contact2:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #ffffff;
+  opacity: 0;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btn-contact2:hover:before, .btn-contact2:focus:before, .btn-contact2:active:before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.btn-contact2:hover, .btn-contact2:focus, .btn-contact2:active{
+  color: white;
+}
+
+
+/*.btn-contact2:before{
   content: "";
 position: absolute;
 z-index: -1;
@@ -7104,7 +7147,7 @@ transition-timing-function: ease-out;
 
 .btn-contact2:hover, .btn-contact2:focus, .btn-contact2:active{
   color: white;
-}
+}*/
 
 .col-footer{
   height: 130px;
@@ -7295,22 +7338,36 @@ transition-timing-function: ease-out;
   height: 285px;
   right: -219px;
   -moz-transition: all 0.5s;
-   -o-transition: all 0.5s;
-   -webkit-transition: all 0.5s;
-   transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont-about-der p{
+  color: #d50346;
+  font-size: 36px;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 
 .cont-about-izq{
   height: 285px;
   text-align: center;
-  padding: 50px;
+  padding: 70px;
   background: #d92c65;
   right: -500px;
   display: none;
   -moz-transition: all 0.5s;
-   -o-transition: all 0.5s;
-   -webkit-transition: all 0.5s;
-   transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont-about-izq p{
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 33px;
 }
 
 .container-aboutus:hover .cont-about-der{
@@ -7322,7 +7379,74 @@ transition-timing-function: ease-out;
   display: block;
 }
 
-.title
+#contact{
+/*  background-color: #AF1E3A;*/
+  padding: 100px 0px;
+}
+
+.contact-input::-webkit-input-placeholder { color: white; }
+.contact-input:-moz-placeholder { color: white;  }
+.contact-input::-moz-placeholder { color: white;  }
+.contact-input:-ms-input-placeholder { color: white;  }
+
+input{
+  /*background-color: #d50346;*/
+  background-color: #AF1E3A;
+  max-width: 480px;
+  width: 100%;
+  padding: 18px 24px;
+  margin: 0 0 12px;
+  font-size: 18px;
+  border: solid;
+  border-width: 0;
+  line-height: 20px;
+}
+
+.btn-formcontact{
+  background-color: transparent;
+  border-width: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #AF1E3A;
+  float: right;
+  font-weight: bold;
+}
+
+.cont-btncontact{
+  max-width: 480px;
+  width: 100%;
+}
+
+.cont-social{
+  width: 150px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  background-color: #AF1E3A;
+  top: 112px;
+}
+
+.cont-social:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 27px solid white;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.cont-icon-social a {
+  color: white !important;
+}
+
+.cont-icon-social .text-inverse{
+  vertical-align: middle;
+  font-size: 20px;
+}
 
 @media (max-width: 991px) {
   .flogos{
